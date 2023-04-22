@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Decodificador</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<main class="main">
+  <h1 class="titulo"><img src="Vector.svg" alt="logo"></h1>
+
+
+  <section class="form box">
+    <form action="">
+
+      <label for="texto1"></label><textarea class="text1" type="text" name="input-texto" id="texto1"
+                                            placeholder="insira o texto aqui" rows="4"
+                                            cols="50"></textarea>
+
+
+      <div class="aviso"><p>&#x26A0; Apenas letras minúsculas, sem acento</p></div>
+      <div class="butoes">
+        <button class="botao1" type="button" id="btn-cripto" onclick="buttonEncriptar()">Criptografar!</button>
+        <button class="botao2" type="button" id="btn-descripto" onclick="buttonDesencriptar()">Descriptografar!
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <section>
+    <div class="copia">
+      <div class="frontcopia">
+
+        <label for="texto2"></label>
+        <textarea class="text2" type="text" id="texto2" name="texto" rows="4" cols="50" placeholder=" " readonly
+                  onfocus="myFunction()"></textarea>
+
+        <div class="info">
+          <p class="p1" id="info"><img src="p1.svg" alt="texto"></p>
+          <p class="p2"><img src="p2.svg" alt="texto2"></p>
+        </div>
+
+        <div class="botao31">
+          <input class="botao3" type="button" value="copiar" id="btn-copy" onclick="copiarTexto()">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+<script src="div.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
